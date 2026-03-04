@@ -3,6 +3,10 @@
   background-image: url('./header-background.jpg');
   background-repeat: no-repeat;
   min-height: 100vh;
+  box-sizing: border-box;
 
-  padding-top: 356px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // padding-top: 356px;
 }
