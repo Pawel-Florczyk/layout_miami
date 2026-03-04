@@ -1,4 +1,4 @@
-@import './utils/reset';
+@use '../utils/reset' as *;
 
 .title {
   font-family: poppins, Arial, Arial, Helvetica, sans-serif;

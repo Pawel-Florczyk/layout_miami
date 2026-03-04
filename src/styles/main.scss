@@ -1,5 +1,5 @@
-@import './utils';
-@import './fonts';
-@import './typography';
-@import './utils/reset';
-@import './title';
+@use 'utils' as *;
+
+@use 'fonts' as *;
+@use 'utils/reset' as *;
+@use 'blocks/title' as *;
