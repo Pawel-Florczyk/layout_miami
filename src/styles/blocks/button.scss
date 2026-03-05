@@ -14,4 +14,17 @@
   font-size: 16px;
   letter-spacing: 0px;
   text-align: center;
+
+  &--send {
+    width: 280px;
+    height: 56px;
+    border-radius: 28px;
+
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
 }
