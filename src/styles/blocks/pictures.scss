@@ -1,8 +1,15 @@
 .pictures {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
 
   &__item {
     width: 280px;
+  }
+
+  &__image {
+    object-fit: cover;
+    height: 100%;
+    width: 130px;
+    object-position: center;
   }
 }
