@@ -4,6 +4,10 @@
   align-items: center;
   padding: 24px 20px;
 
+  &:hover {
+    filter: drop-shadow(0 5px 15px rgba(255, 255, 255, 0.8));
+  }
+
   &-block {
     display: flex;
     gap: 24px;
