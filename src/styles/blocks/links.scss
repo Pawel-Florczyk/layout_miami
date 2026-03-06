@@ -1,0 +1,32 @@
+.links {
+  padding-top: 50px;
+
+  &__list {
+
+  }
+
+  &__item {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 8px;
+    display: inline-block;
+
+
+    color: #1D1D1D;
+
+    &:hover {
+      border-bottom: 1px solid #1D1D1D;
+    }
+  }
+}
