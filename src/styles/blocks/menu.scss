@@ -1,7 +1,17 @@
 .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transform: translate(100%);
+  transition: transform 0.3s ease-in-out;
   background-color: #C2C2C2;
-  padding: 20px;
+  padding: 24px 20px;
   min-height: 100vh;
+
+  &:target {
+    transform: translate(0);
+  }
 
   &-nav {
     display: flex;
