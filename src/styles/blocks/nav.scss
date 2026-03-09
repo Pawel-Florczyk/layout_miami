@@ -2,10 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 20px;
+  padding-top: 24px;
 
-  &:hover {
+  &__logo {
+
+     &:hover {
     filter: drop-shadow(0 5px 15px rgba(255, 255, 255, 0.8));
+  }
   }
 
   &-block {
