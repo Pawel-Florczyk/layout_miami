@@ -1,11 +1,8 @@
 @use '../utils/mixins' as *;
 
 .pictures {
-  @include grid();
 
-  &__item {
-    width: 280px;
-  }
+  @include grid();
 
   &__image {
     object-fit: cover;
@@ -27,6 +24,5 @@
       width: 100%;
     }
     }
-
   }
 }
