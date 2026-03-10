@@ -1,4 +1,5 @@
 @use '../utils/reset' as *;
+@use '../utils/mixins' as *;
 
 .title {
   font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -11,6 +12,16 @@
 
   color: #FFFFFF;
 
+  @include for-desktop() {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
   &--secondary {
     background-color: black;
     font-family: Poppins;
@@ -22,6 +33,15 @@
     text-align: left;
 
     color: #FFFFFF;
+
+     @include for-desktop() {
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 100%;
+      letter-spacing: -1.5px;
+      width: 411px;
+     }
   }
 
   &__glow {
@@ -39,5 +59,14 @@
     letter-spacing: -1.5px;
     text-align: center;
     text-transform: capitalize;
+
+    @include for-desktop() {
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 100%;
+      letter-spacing: -1.5px;
+      text-align: center;
+    }
   }
 }
