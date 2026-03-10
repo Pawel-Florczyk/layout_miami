@@ -1,5 +1,11 @@
+@use '../utils/mixins' as *;
+
 .links {
   padding-top: 50px;
+
+  &__list {
+    padding-bottom: 8px;
+  }
 
   &__item {
     padding-bottom: 32px;
@@ -15,7 +21,6 @@
     text-transform: uppercase;
     text-decoration: none;
     border-bottom: 1px solid transparent;
-    padding-bottom: 8px;
     display: inline-block;
 
 
@@ -23,6 +28,16 @@
 
     &:hover {
       border-bottom: 1px solid #1D1D1D;
+    }
+
+    @include for-desktop() {
+      font-family: Poppins;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 22px;
+      letter-spacing: 2px;
+      vertical-align: middle;
+      text-transform: uppercase;
     }
   }
 }

@@ -39,6 +39,13 @@
       @include for-desktop() {
         height: 16px;
       }
+
+      &-close {
+
+        @include for-desktop() {
+          height: 21px;
+        }
+      }
     }
   }
 }

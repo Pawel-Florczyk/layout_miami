@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .menu {
   position: fixed;
   top: 0;
@@ -9,14 +11,33 @@
   padding: 24px 20px;
   min-height: 100vh;
 
+  @include grid();
+  row-gap: 0;
+
+  align-content: start;
+
   &:target {
     transform: translate(0);
+  }
+
+  &__links {
+    grid-column: span 2;
+
+    @include for-desktop() {
+      grid-column: span 12;
+    }
   }
 
   &-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    grid-column: span 2;
+
+    @include for-desktop() {
+      grid-column: span 12;
+    }
   }
 
   &__phone {
@@ -30,6 +51,19 @@
     padding-bottom: 16px;
 
     color: #1D1D1D;
+
+    grid-column: span 2;
+
+    @include for-desktop() {
+      grid-column: span 12;
+      font-family: Poppins;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 27px;
+      letter-spacing: 0px;
+      vertical-align: middle;
+      text-transform: uppercase;
+    }
   }
 
   &__call-link {
@@ -50,6 +84,13 @@
       color: #1D1D1D;
       text-shadow:
       0 0 10px rgba(0, 0, 0, 1),
+    }
+
+    grid-column: span 2;
+
+    @include for-desktop() {
+      grid-column: span 12;
+      font-weight: 700;
     }
   }
 }
