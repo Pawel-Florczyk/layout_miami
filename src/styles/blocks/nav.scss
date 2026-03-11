@@ -16,9 +16,28 @@
       height: 56px;
     }
 
+    transition: all 0.1s ease-in-out;
+
      &:hover {
-    filter: drop-shadow(0 5px 15px rgba(255, 255, 255, 0.8));
-  }
+      filter: drop-shadow(0 5px 15px rgba(255, 255, 255, 0.8));
+    }
+
+    &-menu {
+
+      @include for-tablet() {
+        height: 56px;
+      }
+
+      @include for-desktop() {
+        height: 56px;
+      }
+
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.8));
+      }
+    }
   }
 
   &-block {
@@ -65,6 +84,16 @@
 
         @include for-desktop() {
           height: 21px;
+
+          transition: transform 0.3s ease;
+
+          &:hover {
+            transform: rotate(90deg);
+          }
+
+          &:active {
+            transform: rotate(90deg) scale(0.8);
+          }
         }
       }
     }

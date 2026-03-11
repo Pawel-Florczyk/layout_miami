@@ -16,9 +16,17 @@
     color: #FFFFFF;
     position: absolute;
     transform: translateX(calc(-100% - 20px));
+
+    text-shadow:
+      0 0 15px rgba(255, 255, 255, 0.9),
   }
 
   &:not(:hover) &__label {
     @include visually-hidden();
+  }
+
+  &__call {
+    color: #FFFFFF;
+    text-decoration: none;
   }
 }

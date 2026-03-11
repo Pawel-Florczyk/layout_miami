@@ -24,7 +24,7 @@
 
   <div class="menu" id="menu">
     <nav class="menu-nav">
-    <a href="#"><img class="nav__logo" src="MyBiKE-black.svg" alt="logo"></a>
+    <a href="#"><img class="nav__logo-menu" src="MyBiKE-black.svg" alt="logo"></a>
     <div>
       <a href="#header"><img class="nav-block__menu-close" src="close-icon.svg" alt="menu"></a>
     </div>
@@ -129,8 +129,8 @@
 
       <article class="article section__article">
         <div class="pictures article__images">
-          <img class="pictures__image pictures__image--big" src="lights-1.jpg" alt="lights-1">
-          <img class="pictures__image pictures__image--small" src="lights-2.jpg" alt="lights-2">
+            <img class="pictures__image pictures__image--big" src="lights-1.jpg" alt="lights-1">
+            <img class="pictures__image pictures__image--small" src="lights-2.jpg" alt="lights-2">
         </div>
         <h3 class="article__function">
           Range & Integrated lights
@@ -142,8 +142,8 @@
 
       <article class="article section__article">
         <div class="pictures article__images">
-          <img class="pictures__image pictures__image--small" src="brakes-1.jpg" alt="brakes-1">
-          <img class="pictures__image pictures__image--big" src="brakes-2.jpg" alt="brakes-2">
+            <img class="pictures__image pictures__image--small" src="brakes-1.jpg" alt="brakes-1">
+            <img class="pictures__image pictures__image--big" src="brakes-2.jpg" alt="brakes-2">
         </div>
         <h3 class="article__function">
           Hydraulic disc brakes & Lightweight
@@ -183,18 +183,26 @@
       </form>
 
       <address class="address contact__address">
-        <h4 class="address__label">Phone</h4>
-        <p class="address__content">+1 234 5555-55-55</p>
-        <h4 class="address__label">Email</h4>
-        <p class="address__content">hello@mybike.com</p>
-        <h4 class="address__label">Address</h4>
-        <p class="address__content">
-          400 first ave.
-          <br>
-          suite 700
-          <br>
-          Minneapolis, MN 55401
-        </p>
+        <div class="address__group">
+          <h4 class="address__label">Phone</h4>
+          <a href="tel:+1 234 555-55-55" class="address__content phone__call">+1 234 5555-55-55</a>
+        </div>
+
+        <div class="address__group">
+          <h4 class="address__label">Email</h4>
+          <a href="mailto:hello@mybike.com" class="address__content">hello@mybike.com</a>
+        </div>
+
+        <div class="address__group">
+          <h4 class="address__label">Address</h4>
+          <a href="https://www.google.com/maps/place/400+N+1st+Ave+STE+700,+Minneapolis,+MN+55401,+Stany+Zjednoczone/@44.9809311,-93.2756729,16z/data=!4m6!3m5!1s0x52b3328fdf233887:0x3348e5113ed2472d!8m2!3d44.9813258!4d-93.2731311!16s%2Fg%2F11nyn_tfyt?entry=ttu&g_ep=EgoyMDI2MDMwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="address__content">
+            400 first ave.
+            <br>
+            suite 700
+            <br>
+            Minneapolis, MN 55401
+          </a>
+        </div>
       </address>
       </div>
 
