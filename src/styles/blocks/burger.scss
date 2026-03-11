@@ -5,6 +5,12 @@
   width: 18px;
   height: 12px;
 
+  @include for-tablet() {
+    display: block;
+    width: 24px;
+    height: 16px;
+  }
+
   @include for-desktop() {
     display: block;
     width: 24px;

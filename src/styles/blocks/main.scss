@@ -26,8 +26,8 @@
     }
 
     @include for-desktop() {
-    grid-column: 1 / 5;
-  }
+      grid-column: 1 / 5;
+    }
   }
 
   &__content {
@@ -38,8 +38,8 @@
     }
 
     @include for-desktop() {
-    grid-column: 6 / 13;
-  }
+      grid-column: 6 / 13;
+    }
   }
 
   &__section {

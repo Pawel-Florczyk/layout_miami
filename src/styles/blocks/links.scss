@@ -30,6 +30,16 @@
       border-bottom: 1px solid #1D1D1D;
     }
 
+    @include for-tablet() {
+      font-family: Poppins;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 22px;
+      letter-spacing: 2px;
+      vertical-align: middle;
+      text-transform: uppercase;
+    }
+
     @include for-desktop() {
       font-family: Poppins;
       font-weight: 700;
