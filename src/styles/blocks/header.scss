@@ -44,7 +44,7 @@
     grid-row: 1 / 2;
 
     @include for-tablet() {
-      grid-column: 1 / 9;
+      grid-column: 1 / 7;
     }
 
     @include for-desktop() {
@@ -57,7 +57,7 @@
     padding-top: 80px;
 
     @include for-tablet() {
-      grid-column: 1 / 9;
+      grid-column: 1 / 7;
       display: flex;
       justify-content: center;
       align-items: center;
