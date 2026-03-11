@@ -1,7 +1,13 @@
+@use '../utils/mixins' as *;
+
 .footer {
   background-image: url('./footer-background.jpg');
   height: 200px;
   width: 100%;
   background-size: cover;
   background-position: center right;
+
+  @include for-desktop() {
+    height: 555px;
+  }
 }
