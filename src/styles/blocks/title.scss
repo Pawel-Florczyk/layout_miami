@@ -12,6 +12,16 @@
 
   color: #FFFFFF;
 
+  @include for-tablet() {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
   @include for-desktop() {
     font-family: Poppins;
     font-weight: 700;
@@ -34,13 +44,23 @@
 
     color: #FFFFFF;
 
+      @include for-tablet() {
+        font-family: Poppins;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: -1.5px;
+        width: 288px;
+      }
+
      @include for-desktop() {
-      font-family: Poppins;
-      font-weight: 500;
-      font-size: 64px;
-      line-height: 100%;
-      letter-spacing: -1.5px;
-      width: 411px;
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 100%;
+        letter-spacing: -1.5px;
+        width: 411px;
      }
   }
 
@@ -59,6 +79,15 @@
     letter-spacing: -1.5px;
     text-align: center;
     text-transform: capitalize;
+
+    @include for-tablet() {
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 100%;
+      letter-spacing: -1.5px;
+      text-align: center;
+    }
 
     @include for-desktop() {
       font-family: Poppins;
