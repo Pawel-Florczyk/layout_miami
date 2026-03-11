@@ -33,6 +33,8 @@
     width: 100%;
     height: 56px;
     border-radius: 28px;
+    border: 0;
+    box-sizing: border-box;
 
     font-family: Poppins;
     font-weight: 700;
@@ -41,5 +43,13 @@
     letter-spacing: 0px;
     text-align: center;
     cursor: pointer;
+  }
+
+  &:hover {
+    box-shadow: 1px 4px 16px 0px #E8E8F066;
+  }
+
+  &:active {
+    box-shadow: 1px 4px 16px 0px #E8E8F0A3;
   }
 }
