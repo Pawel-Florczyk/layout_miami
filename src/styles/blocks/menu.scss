@@ -16,6 +16,10 @@
 
   align-content: start;
 
+  box-sizing: border-box;
+  max-height: 100vh;
+  overflow-y: auto;
+
   &:target {
     transform: translate(0);
   }
