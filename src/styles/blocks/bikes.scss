@@ -13,6 +13,11 @@
 
     @include for-desktop() {
       grid-column: span 4;
+
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+
+      @include hover(transform, scale(1.05));
     }
   }
 }

@@ -6,6 +6,8 @@
   background-repeat: no-repeat;
   min-height: 100vh;
   box-sizing: border-box;
+  background-size: cover;
+  background-position: center right;
 
   display: grid;
   grid-template-columns: repeat(2, 130px);

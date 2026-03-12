@@ -63,6 +63,7 @@
       </h2>
       <div class="bikes">
       <article class="article section__article bikes__article">
+        <a href="#contacts" class="links__compare">
         <div class="article__pictures">
           <img class="article__item" src="sporty-4.jpg" alt="sporty-4-bike">
         </div>
@@ -75,9 +76,11 @@
         <p class="article__price">
           $ 2 590
         </p>
+        </a>
       </article>
 
       <article class="article section__article bikes__article">
+        <a href="#contacts" class="links__compare">
         <div class="article__pictures">
           <img class="article__item" src="town-st.jpg" alt="town-st-bike">
         </div>
@@ -90,9 +93,11 @@
         <p class="article__price">
           $ 2 590
         </p>
+        </a>
       </article>
 
       <article class="article bikes__article">
+        <a href="#contacts" class="links__compare">
         <div class="article__pictures">
           <img class="article__item" src="agile-ride-3.jpg" alt="agile-ride-3-bike">
         </div>
@@ -105,6 +110,7 @@
         <p class="article__price">
           $ 2 090
         </p>
+        </a>
       </article>
       </div>
 
@@ -116,8 +122,8 @@
       </h2>
       <article class="article section__article">
         <div class="pictures article__images">
-            <img class="pictures__image pictures__image--big" src="auto-unlock-1.jpg" alt="auto-unlock-1">
-            <img class="pictures__image pictures__image--small" src="auto-unlock-2.jpg" alt="auto-unlock-2">
+            <img class="pictures__image pictures__image--big article__image article__image--big" src="auto-unlock-1.jpg" srcset="auto-unlock-1.jpg, auto-unlock-1-mobile.png 2x" alt="auto-unlock-1">
+            <img class="pictures__image pictures__image--small article__image" src="auto-unlock-2.jpg" alt="auto-unlock-2">
         </div>
         <h3 class="article__function">
           Auto Unlock
@@ -129,8 +135,8 @@
 
       <article class="article section__article">
         <div class="pictures article__images">
-            <img class="pictures__image pictures__image--big" src="lights-1.jpg" alt="lights-1">
-            <img class="pictures__image pictures__image--small" src="lights-2.jpg" alt="lights-2">
+            <img class="pictures__image pictures__image--big article__image" src="lights-1.jpg" alt="lights-1">
+            <img class="pictures__image pictures__image--small article__image" src="lights-2.jpg" alt="lights-2">
         </div>
         <h3 class="article__function">
           Range & Integrated lights
@@ -142,8 +148,8 @@
 
       <article class="article section__article">
         <div class="pictures article__images">
-            <img class="pictures__image pictures__image--small" src="brakes-1.jpg" alt="brakes-1">
-            <img class="pictures__image pictures__image--big" src="brakes-2.jpg" alt="brakes-2">
+            <img class="pictures__image pictures__image--small article__image" src="brakes-1.jpg" alt="brakes-1">
+            <img class="pictures__image pictures__image--big article__image" src="brakes-2.jpg" alt="brakes-2">
         </div>
         <h3 class="article__function">
           Hydraulic disc brakes & Lightweight
@@ -168,18 +174,18 @@
         <form class="form contact__form">
         <div class="form__item">
           <label for="name" class="form__label">Name</label>
-          <input class="form__input form__item-input" type="text" placeholder="Name" id="name">
+          <input class="form__input form__item-input" type="text" placeholder="Name" id="name" required>
         </div>
         <div class="form__item">
           <label for="email" class="form__label">Email</label>
-          <input class="form__input form__item-input" type="email" placeholder="Email" id="email">
+          <input class="form__input form__item-input" type="email" placeholder="Email" id="email" required>
         </div>
         <div class="form__item">
           <label for="message" class="form__label">Message</label>
-          <textarea class="form__textarea form__item-textarea" placeholder="Message" id="message"></textarea>
+          <textarea class="form__textarea form__item-textarea" placeholder="Message" id="message" required></textarea>
         </div>
 
-        <button class="button button--send">Send</button>
+        <button class="button button--send" type="submit">Send</button>
       </form>
 
       <address class="address contact__address">
@@ -210,5 +216,16 @@
   </main>
   <footer class="footer">
   </footer>
+
+  <script>
+    'use strict';
+    const myForm = document.querySelector('.form');
+
+      myForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Twój wiadomość została przesłana! Czekaj na odpowiedź konsultanta.');
+        this.reset();
+      });
+</script>
 </body>
 </html>
