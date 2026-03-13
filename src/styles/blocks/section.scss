@@ -1,11 +1,13 @@
+@use '../utils/variables' as *;
+
 .section {
-  padding-top: 92px;
+  padding-top: $space-xxl;
 
   &__title {
-    padding-bottom: 48px;
+    padding-bottom: $space-l;
   }
 
   &__article {
-    padding-bottom: 40px;
+    padding-bottom: $space-l;
   }
 }

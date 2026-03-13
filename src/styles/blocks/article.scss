@@ -1,42 +1,43 @@
 @use '../utils/mixins' as *;
+@use '../utils/variables' as *;
 
 .article {
 
   &__model {
-    font-family: Poppins;
-    font-weight: 700;
-    font-size: 24px;
+    font-family: $font-main;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-l;
     line-height: 140%;
     letter-spacing: 0px;
   }
 
   &__description {
-    font-family: Poppins;
-    font-weight: 400;
+    font-family: $font-main;
+    font-weight: $font-weight-regular;
     font-style: normal;
-    font-size: 16px;
+    font-size: $font-size-m;
     line-height: 140%;
     letter-spacing: 0px;
   }
 
   &__price {
-    font-family: Poppins;
-    font-weight: 700;
-    font-size: 24px;
+    font-family: $font-main;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-l;
     line-height: 140%;
     letter-spacing: 0px;
   }
 
   &__function {
-    font-family: Poppins;
-    font-weight: 700;
-    font-size: 24px;
+    font-family: $font-main;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-l;
     line-height: 140%;
     letter-spacing: 0px;
   }
 
   &__pictures {
-    padding-bottom: 32px;
+    padding-bottom: $space-m;
     justify-self: center;
   }
 
@@ -45,12 +46,12 @@
   }
 
   &__paragraph {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: $space-xs;
+    padding-bottom: $space-xs;
   }
 
   &__images {
-    padding-bottom: 16px;
+    padding-bottom: $space-s;
   }
 
   &__image {

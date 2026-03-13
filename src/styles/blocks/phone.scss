@@ -1,12 +1,13 @@
 @use '../utils/mixins' as *;
+@use '../utils/variables' as *;
 
 .phone {
 
   &__label {
     align-self: center;
-    font-family: Poppins;
-    font-weight: 700;
-    font-size: 12px;
+    font-family: $font-main;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-xs;
     line-height: 16px;
     letter-spacing: 2px;
     text-align: right;
@@ -18,7 +19,7 @@
     transform: translateX(calc(-100% - 20px));
 
     text-shadow:
-      0 0 15px rgba(255, 255, 255, 0.9),
+      0 0 15px $color-phone-shadow;
   }
 
   &:not(:hover) &__label {
@@ -26,7 +27,7 @@
   }
 
   &__call {
-    color: #FFFFFF;
+    color: $color-phone-shadow;
     text-decoration: none;
   }
 }

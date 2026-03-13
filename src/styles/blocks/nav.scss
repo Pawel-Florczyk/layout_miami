@@ -1,10 +1,11 @@
 @use '../utils/mixins' as *;
+@use '../utils/variables' as *;
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 24px;
+  padding-top: $space-sm;
 
   &__logo {
 
@@ -19,7 +20,7 @@
     transition: all 0.1s ease-in-out;
 
      &:hover {
-      filter: drop-shadow(0 5px 15px rgba(255, 255, 255, 0.8));
+      filter: drop-shadow(0 5px 15px $color-main-logo-hover);
     }
 
     &-menu {
@@ -35,24 +36,24 @@
       transition: all 0.1s ease-in-out;
 
       &:hover {
-        filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.8));
+        filter: drop-shadow(0 5px 15px $color-menu-logo-hover);
       }
     }
   }
 
   &-block {
     display: flex;
-    gap: 24px;
+    gap: $gap-m;
     align-items: center;
 
     @include for-tablet() {
       height: 32px;
-      gap: 48px;
+      gap: $space-l;
     }
 
     @include for-desktop() {
       height: 32px;
-      gap: 48px;
+      gap: $space-l;
     }
 
     &__phone {

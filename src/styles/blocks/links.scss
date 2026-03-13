@@ -1,26 +1,27 @@
 @use '../utils/mixins' as *;
+@use '../utils/variables' as *;
 
 .links {
-  padding-top: 50px;
+  padding-top: $space-xl;
 
   &__list {
-    padding-bottom: 8px;
+    padding-bottom: $space-xs;
   }
 
   &__item {
-    padding-bottom: 32px;
+    padding-bottom: $space-m;
   }
 
   &__compare {
     text-decoration: none;
-    color: #FFFFFF;
+    color: $color-primary;
   }
 
   &__link {
-    font-family: Poppins;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 22px;
+    font-family: $font-main;
+    font-weight: $font-weight-semi-bold;
+    font-size: $font-size-l;
+    line-height: 24px;
     letter-spacing: 2px;
     vertical-align: middle;
     text-transform: uppercase;
@@ -29,27 +30,27 @@
     display: inline-block;
 
 
-    color: #1D1D1D;
+    color: $color-text-menu;
 
     &:hover {
-      border-bottom: 1px solid #1D1D1D;
+      border-bottom: 1px solid $color-text-menu;
     }
 
     @include for-tablet() {
-      font-family: Poppins;
-      font-weight: 600;
-      font-size: 22px;
-      line-height: 22px;
+      font-family: $font-main;
+      font-weight: $font-weight-semi-bold;
+      font-size: $font-size-l;
+      line-height: 24px;
       letter-spacing: 2px;
       vertical-align: middle;
       text-transform: uppercase;
     }
 
     @include for-desktop() {
-      font-family: Poppins;
-      font-weight: 700;
-      font-size: 22px;
-      line-height: 22px;
+      font-family: $font-main;
+      font-weight: $font-weight-bold;
+      font-size: $font-size-l;
+      line-height: 24px;
       letter-spacing: 2px;
       vertical-align: middle;
       text-transform: uppercase;
