@@ -3,7 +3,7 @@
 
 .header {
   background-color: $color-bg;
-  background-image: url('./images/header/header-background.jpg');
+  background-image: url('src/images/header/header-background.jpg');
   background-repeat: no-repeat;
   min-height: 100vh;
   box-sizing: border-box;
@@ -17,7 +17,7 @@
   justify-content: center;
 
   @include for-tablet() {
-    background-image: url('./images/header/header-background-desktop.jpg');
+    background-image: url('src/images/header/header-background-desktop.jpg');
     grid-template-columns: repeat(6, 80px);
     grid-template-rows: auto 1fr;
     gap: $gap-m;
@@ -29,7 +29,7 @@
   }
 
   @include for-desktop() {
-    background-image: url('./images/header/header-background-desktop.jpg');
+    background-image: url('src/images/header/header-background-desktop.jpg');
     grid-template-columns: repeat(12, 63px);
     grid-template-rows: auto 1fr;
     gap: $gap-m;
