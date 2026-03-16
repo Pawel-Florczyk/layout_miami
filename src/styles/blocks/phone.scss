@@ -14,7 +14,7 @@
     vertical-align: middle;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: $color-phone-icon;
     position: absolute;
     transform: translateX(calc(-100% - 20px));
 
@@ -27,7 +27,7 @@
   }
 
   &__call {
-    color: $color-phone-shadow;
+    color: $color-phone-icon;
     text-decoration: none;
   }
 }
