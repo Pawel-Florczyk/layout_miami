@@ -8,7 +8,7 @@ Projekt nowoczesnego, responsywnego landing page'a, stworzony z dużym naciskiem
 ## Architektura Stylów i Design Tokens
 W projekcie zastosowano profesjonalne podejście do zarządzania stylami, oparte na systemie *Design Tokens*. Pozwala to na pełną kontrolę nad warstwą wizualną z jednego miejsca:
 
-* *Normalizacja i Optymalizacja*: Samodzielnie ujednoliciłem wartości odstępów oraz wielkości czcionek z projektu Figma. Dzięki usunięciu przypadkowych, zbliżonych wartości, kod stał się spójny, bardziej czytelny i łatwiejszy w utrzymaniu.
+* *Normalizacja i Optymalizacja*: Samodzielnie ujednoliciłem wartości odstępów oraz wielkości czcionek z projektu na platformie Figma. Dzięki usunięciu przypadkowych, zbliżonych wartości, kod stał się spójny, bardziej czytelny i łatwiejszy w utrzymaniu.
 * *Variables System*: Pełna centralizacja ustawień projektu w pliku _variables.scss.
     * *Typography*: Skalowalne rozmiary czcionek i system interlinii.
     * *Spacing System*: Spójne odstępy sekcji oraz mikro-odstępy.
